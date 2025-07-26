@@ -81,7 +81,6 @@ This phase is the **most critical** because it deals with a real-world issue: **
 
 The Dual Port RAM should not behave unpredictably, so we introduce **smart arbitration logic**. In our design, **Port A is given higher priority** over Port B in case of conflicts.
 
----
 
 ### **1. What is the Problem Being Solved?**
 
@@ -95,7 +94,6 @@ Without arbitration, the final stored value would be **unpredictable**, because:
 
 This makes the stored data unreliable.
 
----
 
 ### **2. Our Arbitration Rule**
 
@@ -105,7 +103,6 @@ We solved this by defining a **clear priority:**
 
 This is implemented in the `always` block of the Dual Port RAM.
 
----
 
 ### **3. Working with an Example**
 
@@ -115,7 +112,6 @@ This is implemented in the `always` block of the Dual Port RAM.
 * **Port A wants to write 0x78** (hexadecimal 78h).
 * **Port B wants to write 0xDC** (hexadecimal DCh).
 
----
 
 ### **4. Step-by-Step Operation**
 
@@ -140,7 +136,6 @@ This is implemented in the `always` block of the Dual Port RAM.
 
    * On the next read operation, whether through Port A or Port B, address 0x23 will output **78h**, proving arbitration worked.
 
----
 
 ### **5. Waveform Confirmation**
 
@@ -152,7 +147,6 @@ Looking at the uploaded Phase 4 waveform:
 
 You can also see the short period of `ZZ` (high impedance) before the valid data appeared, which is normal during bus turnarounds.
 
----
 
 ### **6. Conclusion of Phase 4**
 
