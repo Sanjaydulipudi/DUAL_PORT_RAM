@@ -96,7 +96,7 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-## ** Key Learnings**
+##  Key Learnings
 
 - Understanding **True Dual Port RAM architecture**.  
 - Simulating **asynchronous clock domains** in Verilog.  
@@ -105,11 +105,9 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-## ** Author**
+##  Author
 
  **Dulipudi Laashmith Sanjay**  
 B.Tech ECE | VVIT College | VLSI Enthusiast  
-
-This project was developed as part of academic learning and can be extended further for **pipelined RAM architectures** or **AXI-based memory systems**.
 
 ---
