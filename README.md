@@ -1,6 +1,6 @@
-# ** Dual Port RAM – Verilog Implementation**
+# Dual Port RAM – Verilog Implementation
 
-### ** Project Overview**  
+### Project Overview  
 This project demonstrates the design and simulation of a **True Dual Port RAM (256 x 8)** using **Verilog HDL**, tested in **Xilinx Vivado 2025.1**.  
 The RAM supports simultaneous **read/write operations on two ports (A & B)**, independent clocks, and **smart arbitration** when conflicts occur.
 
@@ -8,7 +8,7 @@ The design was verified in **4 simulation phases**, starting from basic memory c
 
 ---
 
-## ** What is Dual Port RAM?**
+##  What is Dual Port RAM?
 
 A **Single Port RAM** allows only one read or write at a time, whereas a **Dual Port RAM** can handle **two simultaneous operations** on two separate ports.  
 
@@ -20,7 +20,7 @@ A **Single Port RAM** allows only one read or write at a time, whereas a **Dual 
 
 ---
 
-## ** Project Specifications**
+##  Project Specifications
 
 - **Memory Size:** 256 x 8 (256 locations, 8 bits per location)  
 - **Clocks:** Independent (`clk_a`, `clk_b`)  
@@ -30,13 +30,13 @@ A **Single Port RAM** allows only one read or write at a time, whereas a **Dual 
 
 ---
 
-## ** Simulation Phases**
+##  Simulation Phases
 
 The simulation was divided into **4 well-structured phases**, each targeting one functional verification step.
 
 ---
 
-### ** Phase 1 – Initial Memory Check**  
+### Phase 1 – Initial Memory Check 
 
 **Objective:** Confirm that all memory locations are initialized to `0` before any operation.
 
@@ -49,7 +49,7 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-### ** Phase 2 – Basic Write & Read Operations**  
+###  Phase 2 – Basic Write & Read Operations 
 
 **Objective:** Test simple read and write operations for both ports independently.
 
@@ -64,7 +64,7 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-### **Phase 3 – Independent Clock Operation**  
+### Phase 3 – Independent Clock Operation  
 
 **Objective:** Prove that both ports can work **asynchronously with different clock speeds**.
 
@@ -79,7 +79,7 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-### ** Phase 4 – Smart Arbitration (Conflict Handling)**  
+### Phase 4 – Smart Arbitration (Conflict Handling)
 
 **Objective:** Handle simultaneous write conflicts intelligently.
 
@@ -96,7 +96,7 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-## **5️ Key Learnings**
+## ** Key Learnings**
 
 - Understanding **True Dual Port RAM architecture**.  
 - Simulating **asynchronous clock domains** in Verilog.  
@@ -105,7 +105,7 @@ The simulation was divided into **4 well-structured phases**, each targeting one
 
 ---
 
-## **6️ Author**
+## ** Author**
 
  **Dulipudi Laashmith Sanjay**  
 B.Tech ECE | VVIT College | VLSI Enthusiast  
